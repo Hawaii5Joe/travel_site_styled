@@ -18,7 +18,7 @@ Set some common styles for the body of the page
 body {
   background-color: black;
   color: white;
-  font: helvetica;
+  font-family: helvetica;
   font-size: 16px;
 }
 
@@ -105,6 +105,7 @@ style the element with the id of hero
   height: 450px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-image: url("../images/travel_hero.jpg");
 }
 
@@ -161,13 +162,17 @@ background-image: url("../images/chile_flag.svg");
 /*
  target the element with the id of nav-list and float it to the left
 */
-
+#logo{
+  float:left;
+}
 
 
 /*
  target the element with the id of nav and float it to the right
 */
-
+#navbar{
+  float: right;
+}
 
 
  /*
@@ -175,7 +180,10 @@ background-image: url("../images/chile_flag.svg");
   - remove all margin and padding
   - remove bullets from the unorder list
 */
-
+#nav-list{
+  margin:0;
+  list-style: none;
+}
 
 
 /*
@@ -184,7 +192,13 @@ background-image: url("../images/chile_flag.svg");
   - give a top and bottom padding of 5px
   - left and right padding of 15px
 */
-
+.nav-link {
+  display: inline;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 
 /*
@@ -192,7 +206,10 @@ background-image: url("../images/chile_flag.svg");
   - remove the underline from the links
   - make sure the text is white
 */
-
+#masthead  a{
+  text-decoration: none;
+  color: white;
+}
 
 
 /*
@@ -201,13 +218,19 @@ background-image: url("../images/chile_flag.svg");
   - set the height to 100px
   - set the line height to 100px
 */
-
+#footer {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
 
 
 /*
  target the element with the id of copyright and float it to the left
 */
-
+#copyright{
+  float: left;
+}
 
 
 /*
@@ -216,14 +239,22 @@ background-image: url("../images/chile_flag.svg");
   - collaps the border to remove spacing between cells
   - make the width 100%
 */
+table{
+  border: 2px solid black;
+  width: 100%;
+  border-collapse: collapse;
 
+}
 
 
 /*
  target the tr, td, and th elements
   - give a 2px black solid border to the table
 */
+tr, td, th{
+  border: 2px solid black;
 
+}
 
 
 /*
@@ -231,7 +262,10 @@ background-image: url("../images/chile_flag.svg");
   - set the background color to black
   - set the text color to white
 */
-
+th{
+  background: black;
+  color: white;
+}
 
 
 /*
@@ -239,14 +273,21 @@ background-image: url("../images/chile_flag.svg");
   - make the text color black
   - make the background color white
 */
-
+#travel-table{
+  color: black;
+  background: white;
+}
 
 
 /*
  target the h3 element within the element with the id of travel-table
   - center align the text
 */
+#travel-table h3{
 
+  text-align: center;
+
+}
 
 
 /*
@@ -255,10 +296,20 @@ background-image: url("../images/chile_flag.svg");
   - give a top and bottom padding of 5px
   - give a left and right padding of 15px
 */
-
+#social-links{
+  float: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 
 /*
  target the links inside element with the id of social-links
   - make sure the text is white and there is no underline
 */
+#social-links a{
+  text-decoration:underline;
+  color: white;
+}
